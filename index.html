@@ -8,7 +8,7 @@
     <style>
 
     body {
-      background-color: black;
+      background-color: #282626;
     }
 
     .container {
@@ -19,17 +19,18 @@
 
     .img_title img {
       width: 100vw;
-      opacity: .90;
+      opacity: .60;
     }
 
     .centered {
-      font-size: 4.5rem;
+      font-size: 4rem;
       font-family: sans-serif;
       font-weight: bold;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -75%);
+      text-shadow: 1px 1px lightGrey;
     }
 
     .efficiency {
@@ -38,14 +39,16 @@
     }
 
     .plotly {
-      margin-bottom: 9rem;
-      width: 50vw;
-      margin-left: 20rem;
+      margin-bottom: 6rem;
+      width: 70vw;
+      margin-left: 11.5rem;
+      border: solid 1px grey;
     }
 
-    /*.plotly iframe {
-      margin-left: 80rem;
-    }*/
+    .plotly a {
+      width: 70vw;
+    }
+
 
     .crash {
       font-family: sans-serif;
@@ -77,6 +80,7 @@
       text-align: center;
       font-family: sans-serif;
       margin-top: 3rem;
+      margin-bottom: 3rem;
       font-size: 2.5rem;
     }
 
@@ -87,6 +91,179 @@
       margin: 0 10rem 0 10rem;
     }
 
+    .HFT {
+      width: 74vw;
+      opacity: 0.8;
+    }
+
+    .bigdata {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 1.2rem;
+      color: white;
+      margin: 5rem 10rem 5rem 10rem;
+      font-family: sans-serif;
+    }
+
+    .bigdata p {
+      margin-bottom: 2rem;
+      line-height: 2rem;
+      text-align: justify;
+    }
+
+     a {
+      text-decoration: none;
+      font-weight: bold;
+      color: grey;
+    }
+
+    blockquote {
+        background: #A8A8A8;
+        border-left: 10px solid #ccc;
+        margin: 5em 13rem 5rem 13rem;
+        padding: 0.5em 10px;
+        quotes: "\201C""\201D""\2018""\2019";
+  }
+
+    blockquote:before {
+      color: #ccc;
+      content: open-quote;
+      font-size: 4rem;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+
+    blockquote p {
+      color: white;
+      display: inline;
+    }
+
+    blockquote span {
+      font-size: 0.9rem;
+      margin-left: 10rem;
+      color: #505050;
+
+    }
+
+
+    .efficiency p {
+      color: white;
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      margin: 1rem 10rem 1rem 10rem;
+      line-height: 2rem;
+      text-align: justify;
+    }
+
+    .efficiency {
+      margin-bottom: 5rem;
+      margin-top: 5rem;
+    }
+
+    .what p {
+      color: white;
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      margin: 1rem 10rem 1rem 10rem;
+      line-height: 2rem;
+      text-align: justify;
+    }
+
+    .what {
+      margin-bottom: 5rem;
+      margin-top: 5rem;
+    }
+
+    .future p {
+      color: white;
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      margin: 1rem 10rem 1rem 10rem;
+      line-height: 2rem;
+      text-align: justify;
+    }
+
+
+
+    .headlines img {
+      width: 30vw;
+    }
+
+    .headlines {
+      position: absolute;
+    }
+
+    .headline1 {
+      top: 20%;
+      left: 60%;
+      /*position: absolute;*/
+      transform: translate(-50%, -75%);
+      opacity: 0.5;
+    }
+
+    .headline2 {
+      top: 30%;
+      left: 20%;
+      /*position: absolute;*/
+      transform: translate(-50%, -75%);
+      opacity: 0.5;
+    }
+
+    .headline3 {
+      top: 20%;
+      left: 40%;
+      /*position: absolute;*/
+      transform: translate(-50%, -75%);
+      opacity: 0.5;
+    }
+
+    .headline4 {
+      top: 20%;
+      left: 40%;
+      /*position: absolute;*/
+      /*transform: translate(-50%, -75%);*/
+      opacity: 0.5;
+    }
+
+    .headline5 {
+      top: 70%;
+      left: 40%;
+      /*position: absolute;*/
+      transform: translate(-50%, -75%);
+      opacity: 0.5;
+    }
+
+    .headline6 {
+      top: 20%;
+      left: 40%;
+      /*position: absolute;*/
+      transform: translate(50%, -65%);
+      opacity: 0.5;
+    }
+
+    .headline7 {
+      top: 20%;
+      left: 40%;
+      /*position: absolute;*/
+      transform: translate(10%, -75%);
+      opacity: 0.5;
+    }
+
+    .headline8 {
+      top: 20%;
+      left: 40%;
+      /*position: absolute;*/
+      transform: translate(-20%, -35%);
+      opacity: 0.5;
+    }
+
+    .para {
+      margin-top: 25rem;
+    }
+
+
+
     </style>
   </head>
   <body>
@@ -96,7 +273,7 @@
         <img src='first-img.jpg'>
       </div>
       <div class='centered'>
-        BIG DATA and Algorithmic Trading
+        THE ROBOTS ARE TAKING OVER THE MARKET
       </div>
 
     </header>
@@ -104,18 +281,28 @@
     <section class='what'>
       <h1>WHAT IS ALGORITHMIC TRADING?</h1>
 
-      <p>According to a study from the University of Warwick, the more weekly searches a company has the more it’s traded on the New York Stock Exchange.
-         But trading more of a company’s stock just because it comes up in searches has problems. What if people are searching about their exploding Samsung battery?</p>
+      <p>Robots are trading millions of stocks every millisecond, every day. Thanks to ever-advancing algorithms,
+         machines buy and sell in worldwide financial markets at unimaginable speeds.</p>
 
-      <p>This is where sentiment analysis comes in. Algorithms scrape the language millions of people use on Twitter and in Google searches, determining whether people are
-         thinking positively or negatively about a company or product.</p>
+      <p>Robotic trading has only grown in recent years. The most popular form of algorithmic trading,
+         high-frequency trading (HFT), processes historical and real-time market data to know when to buy
+         and sell at lightning speed.</p>
 
-      <p>These algorithms also watch the sentiment of real-time news coverage. Bad press can trigger machines to sell stocks off in a flurry. And perceived events
-         can affect how algorithms trade on the market as a whole.</p>
+      <p>HFT trading volume grew by 164 percent between 2005 and 2009, according to the NYSE. And according
+         to Bank of England, HFTs traded 70 percent of the average daily share volume in US equities.</p>
 
-    <img>
+      //graph
 
-    <p> </p>
+      <p>Thanks to big data, these algorithms are only becoming smarter at trading billions of dollars every day.
+         The more and more data financial robots consume makes them even smarter at making quickest,<p>
+
+      <blockquote><p>The industry is transforming into a big data business. It’s going to be firms that invest
+         in the technology that will be leaders in the space.</p></br><span> - Ari Rubenstein, co-founder and chief executive at GTS,
+            a high frequency trading company</span></blockquote>
+
+
+
+
 
 
 
@@ -124,28 +311,58 @@
     <section class='bigdata'>
       <h1>HOW DOES IT USE BIG DATA?</h1>
 
+
+      <p>According to a <a href='https://www.futurelearn.com/courses/big-data/0/steps/7632'>study</a> from the University of Warwick, the more weekly searches a company has the more it’s traded on the New York Stock Exchange.
+         But trading more of a company’s stock just because it comes up in searches has problems. What if people are searching about their exploding Samsung battery?</p>
+
+      <p>This is where sentiment analysis comes in. Algorithms scrape the language millions of people use on Twitter and in Google searches, determining whether people are
+         thinking positively or negatively about a company or product.</p>
+
+      <img src='HFT.jpg' class='HFT'>
+
+      <p>These algorithms also watch the sentiment of real-time news coverage. Bad press can trigger machines to sell stocks off in a flurry. And perceived events
+         can affect how algorithms trade on the market as a whole.</p>
+
+      <p>CNBC reported the <a href='https://www.cnbc.com/id/100666302'>“first real-time demonstration of robo-trading”</a> in 2013 when a hacked AP Twitter account said there were explosions at the White House.
+         Computers abruptly ended trades faster than humans could</p>
+
+      <blockquote><p> It's not so much that the computers initiated trades. What happened is that they canceled the orders, so the bids come out of the market. That causes a crash</p></br><span>A person at an algorithmic trading firm told CNBC.</span></blockquote>
+
+
+
     </section>
 
     <section class='efficiency'>
       <h1>IS IT WORKING?</h1>
 
+      <p>First, let’s highlight that algorithmic trading is not an attempt to make a trading profit. It is a way to minimize the cost, market impact and risk.
+      </p>
+
+      <p>They are widely used and successful because they replace human emotions by data analysis. By keeping emotions in check, traders more easily stick to plan.
+      </p>
+
+      <p>Backtesting is another advantage. It applies trading rules to historical market data to determine the viability of an idea. Traders can take these precise sets
+         of rules and test them on historical data before risking money in live trading. The use of algo trading combined with big data minimize risks.</p>
+
+      <p>Nonetheless, they are controversial amongst others for their supposed role in flash crashes.</p>
+
+
       <div class='plotly'>
-          <a href="https://plot.ly/~OliviaBugault/8/?share_key=KNnOlSWCon0C9uHKUwUSnq" target="_blank" title="Plot 8" style="display: block; text-align: center;"><img src="https://plot.ly/~OliviaBugault/8.png?share_key=KNnOlSWCon0C9uHKUwUSnq" alt="Plot 8" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-          <script data-plotly="OliviaBugault:8" sharekey-plotly="KNnOlSWCon0C9uHKUwUSnq" src="https://plot.ly/embed.js" async></script>
-      </div>
-
-
-
-
-     <div class='flash'>The 6th May 2010 Flash Crash</div>
-
-     <div class='crash'>
-       <img src='crash.png'>
+    <a href="https://plot.ly/~OliviaBugault/8/?share_key=KNnOlSWCon0C9uHKUwUSnq" target="_blank" title="Plot 8" style="display: block; text-align: center;"><img src="https://plot.ly/~OliviaBugault/8.png?share_key=KNnOlSWCon0C9uHKUwUSnq" alt="Plot 8" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="OliviaBugault:8" sharekey-plotly="KNnOlSWCon0C9uHKUwUSnq" src="https://plot.ly/embed.js" async></script>
      </div>
+
+
+      <p>On May 6th 2010, the Dow Jones plummeted 1000 points within a single trading day. Nearly $1 trillion was wiped off the market value, as well as a drop of 600 points within a 5-minutes time frame, before recovering moments later. The SEC, CFTC and many experts largely blamed HFT firms for the crash.</p>
+
+
+     <!-- <div class='crash'>
+       <img src='flashcrash.png'>
+     </div> -->
 
      <div class='explanation'>
 
-       <p>The US stock market remained inaccessible for 36 minutes. All stock indexes collapsed and rebounded in quick succession. This spike represents a loss of 1 trillion US market value.
+       <p>HFT algorithms worsen the impact of the crash by increasing the price fluctuation this day. Constantly analysing the market, they noticed a decline in the stock market value and started to sell a vast amount of securities.
       </p>
 
      </div>
@@ -154,7 +371,33 @@
     </section>
 
     <section class='future'>
-      <h1>WHAT ABOUT THE FUTURE OF ALGO TRADING?</h1>
+      <h1>THE FUTURE OF ALGO TRADING?</h1>
+
+      <div class='headlines'>
+
+        <img src='headline1.png' class='headline1'>
+        <img src='headline2.png' class='headline2'>
+        <img src='headline3.png' class='headline3'>
+        <img src='headline4.png' class='headline4'>
+        <img src='headline5.png' class='headline5'>
+        <img src='headline6.png' class='headline6'>
+        <img src='headline7.png' class='headline7'>
+        <img src='headline8.png' class='headline8'>
+
+      </div>
+      <div class='para'>
+
+      <p>The future systems could study all the historical data that we have archived over the course of the entire trading history, analyze it with ease
+         to find out the trends, what would work and what would not.</p>
+
+      <p>Most importantly, with a constantly growing amount of data available, it could also teach itself to predict the future markets. </p>
+
+      <p>Market crashes might become a thing of the past with trading become sentient and realizing the impact of a buy/sell gone wrong.</p>
+
+      <p>Imagine a system so powerful, with a vast reach with Big Data and connectivity like the likes of the IoT rapid internet speed and gigaflops of processing power incorporating structured and unstructured data, utilizing real-time global news feed, with LIVE social media and current and historical stock data across the globe in one algorithmic engine.
+      </p>
+
+    </div>
 
     </section>
 
