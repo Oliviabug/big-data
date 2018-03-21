@@ -49,6 +49,10 @@
       width: 70vw;
     }
 
+    /*.bigdata .plotly a {
+
+    }*/
+
 
     .crash {
       font-family: sans-serif;
@@ -137,6 +141,9 @@
     blockquote p {
       color: white;
       display: inline;
+      font-size: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
 
     blockquote span {
@@ -165,7 +172,7 @@
       color: white;
       font-size: 1.2rem;
       font-family: sans-serif;
-      margin: 1rem 5rem 1rem 5rem;
+      margin: 1rem 10rem 1rem 10rem;
       line-height: 2rem;
       text-align: justify;
     }
@@ -176,8 +183,14 @@
     }
 
     .what blockquote {
-      margin-left: 5rem;
-      margin-right: 5rem;
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+
+    .what blockquote p {
+      font-size: 2rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
     }
 
     .future p {
@@ -188,8 +201,6 @@
       line-height: 2rem;
       text-align: justify;
     }
-
-
 
     .headlines img {
       width: 30vw;
@@ -202,7 +213,6 @@
     .headline1 {
       top: 20%;
       left: 60%;
-      /*position: absolute;*/
       transform: translate(48%, -5%);
       opacity: 0.7;
     }
@@ -210,7 +220,6 @@
     .headline2 {
       top: 30%;
       left: 20%;
-      /*position: absolute;*/
       transform: translate(50%, -35%);
       opacity: 0.7;
     }
@@ -218,7 +227,6 @@
     .headline3 {
       top: 20%;
       left: 40%;
-      /*position: absolute;*/
       transform: translate(-10%, 22%);
       opacity: 0.7;
     }
@@ -226,7 +234,6 @@
     .headline4 {
       top: 20%;
       left: 40%;
-      /*position: absolute;*/
       transform: translate(70%, 25%);
       opacity: 0.7;
     }
@@ -234,7 +241,6 @@
     .headline5 {
       top: 70%;
       left: 40%;
-      /*position: absolute;*/
       transform: translate(0%, -75%);
       opacity: 0.7;
     }
@@ -242,7 +248,6 @@
     .headline6 {
       top: 20%;
       left: 40%;
-      /*position: absolute;*/
       transform: translate(-27%, -2%);
       opacity: 0.7;
     }
@@ -250,7 +255,6 @@
     .headline7 {
       top: 20%;
       left: 40%;
-      /*position: absolute;*/
       transform: translate(151%, -17%);
       opacity: 0.7;
     }
@@ -258,7 +262,6 @@
     .headline8 {
       top: 20%;
       left: 40%;
-      /*position: absolute;*/
       transform: translate(-56%, -35%);
       opacity: 0.7;
     }
@@ -296,7 +299,7 @@
       <p>HFT trading volume grew by 164 percent between 2005 and 2009, according to the NYSE. And according
          to Bank of England, HFTs traded 70 percent of the average daily share volume in US equities.</p>
 
-      //graph
+      <a href='https://plot.ly/~DieterHolger/26.embed'></a>
 
       <p>Thanks to big data, these algorithms are only becoming smarter at trading billions of dollars every day.
          The more and more data financial robots consume makes them even smarter at making quickest,<p>
@@ -323,7 +326,11 @@
       <p>This is where sentiment analysis comes in. Algorithms scrape the language millions of people use on Twitter and in Google searches, determining whether people are
          thinking positively or negatively about a company or product.</p>
 
-      <img src='HFT.jpg' class='HFT'>
+         <div class='plotly'>
+       <a href="https://plot.ly/~OliviaBugault/10/?share_key=t9GGvPR3eCv1Wwf3BS3g0f" target="_blank" title="Plot 10" style="display: block; text-align: center;"><img src="https://plot.ly/~OliviaBugault/10.png?share_key=t9GGvPR3eCv1Wwf3BS3g0f" alt="Plot 10" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+       <script data-plotly="OliviaBugault:10" sharekey-plotly="t9GGvPR3eCv1Wwf3BS3g0f" src="https://plot.ly/embed.js" async></script>
+        </div>
+
 
       <p>These algorithms also watch the sentiment of real-time news coverage. Bad press can trigger machines to sell stocks off in a flurry. And perceived events
          can affect how algorithms trade on the market as a whole.</p>
